@@ -1,0 +1,30 @@
+[package]
+name = "short-url"
+version = "0.1.0"
+edition = "2021"
+
+# Starting in Rust 1.62 you can use `cargo add` to add dependencies 
+# to your project.
+#
+# If you're using an older Rust version,
+# download cargo-edit(https://github.com/killercup/cargo-edit#installation) 
+# to install the `add` subcommand.
+#
+# Running `cargo add DEPENDENCY_NAME` will
+# add the latest version of a dependency to the list,
+# and it will keep the alphabetic ordering for you.
+
+[dependencies]
+async-trait = "0.1.74"
+aws-config = "0.56.1"
+aws-sdk-dynamodb = "0.33.0"
+base32 = "0.4.0"
+generic-array = "1.0.0"
+hex = "0.4.3"
+lambda_http = "0.8.1"
+lambda_runtime = "0.8.1"
+sha2 = "0.10.8"
+tokio = { version = "1", features = ["macros"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt"] }
+
